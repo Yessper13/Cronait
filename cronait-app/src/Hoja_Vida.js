@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Bienvenida.css"; // Mantiene los mismos estilos
-
+import "./Style.css"; 
 import Header from "./Header";
 import Footer from "./Footer";
 
@@ -9,14 +9,16 @@ import logo from "./imagenes/logo.png"; // Importa el logo
 
 const HojaVida = () => {
   return (
-    <div className="container">
-      {/* Header */}
+    <div>
+          {/* Header */}
       <Header />
+    <div className="container">
+    
 
       {/* Contenido principal */}
-      <main className="main">
-        <h1 className="bienvenida">Mi Hoja de Vida</h1>
-        <section className="hoja-vida">
+      <main className="container">
+      <div className="titulo Fuente1">HV</div>
+        <section className="container">
           <h2>Información Personal</h2>
           <p><strong>Nombre:</strong> [Tu Nombre]</p>
           <p><strong>Email:</strong> [Tu Email]</p>
@@ -43,7 +45,9 @@ const HojaVida = () => {
       </main>
 
       {/* Footer */}
-      <Footer />
+      
+    </div>
+    <Footer />
     </div>
   );
 };

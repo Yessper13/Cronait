@@ -2,9 +2,10 @@ import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import "./Target_Apps.css";
+import "./Style.css";
 import logo from "./imagenes/logo.png"; // Verifica la ruta
 
-const apps = [  // 🔥 Asegúrate de definir esto antes del return
+const apps = [  
   "App 1", "App 2", "App 3",
   "App 4", "App 5", "App 6",
   "App 7", "App 8", "App 9"
@@ -12,10 +13,13 @@ const apps = [  // 🔥 Asegúrate de definir esto antes del return
 
 const Target_Apps = () => {
   return (
-    <div className="container">
+    <div>
       <Header />
+    
+    <div className="container">
       
-      <div className="cursos-titulo">App's</div>
+      
+      <div className="titulo Fuente1">App's</div>
       
       <main className="apps-grid">
         {apps.map((app, index) => (
@@ -26,7 +30,9 @@ const Target_Apps = () => {
         ))}
       </main>
       
-      <Footer />
+      
+    </div>
+    <Footer />
     </div>
   );
 };

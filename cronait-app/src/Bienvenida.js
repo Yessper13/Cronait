@@ -31,9 +31,12 @@ const Bienvenida = () => {
   }, []);
 
   return (
-    <div className="container">
+    <div>
       {/* Header */}
       <Header />
+    
+    <div className="container">
+      
 
       {/* Contenido principal */}
       <main className="main">
@@ -49,11 +52,13 @@ const Bienvenida = () => {
         </div>
 
         {/* Mensaje de bienvenida */}
-        <h1 className="bienvenida">¡Bienvenido a nuestro portal web!</h1>
+        <h1 className="Fuente1">¡Bienvenido a nuestro portal web!</h1>
       </main>
 
       {/* Footer */}
-      <Footer />
+      
+    </div>
+    <Footer />
     </div>
   );
 };

@@ -116,13 +116,7 @@ body {
 }
 
 
-.bienvenida {
-    font-family: 'Amsterdam', sans-serif;
-    font-size: 32px;
-    color: #333;
-    text-align: center;
-    margin-top: 20px;
-}
+
 /* Footer */
 .footer {
     background: white;

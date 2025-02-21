@@ -23,8 +23,8 @@ function Cursos() {
       <Header />
 
       {/* Contenido principal */}
-      <div className="cursos-container">
-        <div className="cursos-titulo">Cursos</div>
+      <div className="container">
+        <div className="titulo Fuente1">Cursos </div>
 
         <div className="cursos-content">
           {/* Lista de cursos */}

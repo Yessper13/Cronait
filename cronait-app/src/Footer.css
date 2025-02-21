@@ -1,0 +1,47 @@
+/* Asegurar que el html y body ocupen toda la altura de la pantalla */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hacer que el main ocupe el espacio restante */
+main {
+  flex: 1;
+}
+
+/* Estilos generales del footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #055bf0, #bad6e9);
+  padding: 15px 20px;
+  color: white;
+  box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 0.8s ease-in-out;
+}
+
+/* Logo del footer */
+.logo-footer {
+  width: 300px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo-footer:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* Animación de entrada */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

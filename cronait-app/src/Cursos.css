@@ -1,0 +1,92 @@
+/* Contenedor principal */
+.cursos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Título */
+  .cursos-titulo {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #c4d8fc, #0459eb);
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Contenedor de los cursos con dos columnas */
+  .cursos-content {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    flex-grow: 1;
+    gap: 10px;
+  }
+  
+  /* Lista de cursos */
+  .lista-cursos {
+    flex: 1;
+    background: #f8f9fa;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .lista-cursos h3 {
+    margin-bottom: 10px;
+  }
+  
+  .lista-cursos ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .lista-cursos li {
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .lista-cursos li:hover {
+    background: #e0e0e0;
+  }
+  
+  /* Vista previa de certificados */
+  .vista-previa {
+    flex: 3;
+    background: #ffffff;
+    padding: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .certificado-box {
+    width: 80%;
+    height: 300px;
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #bbb;
+    border-radius: 8px;
+  }
+  .certificado-frame {
+    width: 100%; /* Usa todo el ancho del contenedor */
+    height: 80vh; /* Ajusta la altura al 80% de la pantalla */
+    border: none; /* Elimina el borde del iframe */
+  }

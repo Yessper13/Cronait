@@ -1,0 +1,69 @@
+/* Estilos generales del header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #c4d8fc, #0459eb);
+    padding: 15px 20px;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeInDown 0.8s ease-in-out;
+  }
+  
+  /* Perfil */
+  .perfil {
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .perfil:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Menú de navegación */
+  .nav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .nav a:hover {
+    color: #ffd700;
+    transform: scale(1.1);
+  }
+  
+  /* Botón de menú */
+  .menu {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .menu:hover {
+    transform: rotate(90deg);
+  }
+  
+  /* Animación de entrada */
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
